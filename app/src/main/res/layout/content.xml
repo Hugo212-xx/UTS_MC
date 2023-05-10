@@ -1,225 +1,92 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".hlm_content">
 
-    <androidx.appcompat.widget.Toolbar
+
+    <ImageView
+        android:id="@+id/d_img"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-        <LinearLayout
-            android:layout_marginRight="20dp"
-            android:orientation="horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <Button
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:background="@drawable/kiri"
-                android:contentDescription="@string/app_name"
-                tools:ignore="TouchTargetSizeCheck" />
-            <LinearLayout
-                android:layout_weight="1"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"/>
-
-            <Button
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:background="@drawable/menu"
-                android:contentDescription="@string/app_name"
-                tools:ignore="TouchTargetSizeCheck" />
-        </LinearLayout>
-    </androidx.appcompat.widget.Toolbar>
+        android:layout_height="500dp"
+        android:scaleType="centerCrop"
+        tools:srcCompat="@tools:sample/avatars" />
 
     <LinearLayout
-        android:orientation="vertical"
-        android:padding="20dp"
+        android:id="@+id/l1"
         android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:background="@color/grey">
+        android:layout_height="500dp"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+
+        <ImageView
+            android:id="@+id/kembali"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/kiri"
+            android:contentDescription="@string/app_name"
+            tools:ignore="TouchTargetSizeCheck" />
+
         <LinearLayout
-            android:padding="10dp"
-            android:orientation="horizontal"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-            <ImageView
-                android:src="@drawable/profile_icon"
-                android:layout_width="70dp"
-                android:layout_height="70dp"/>
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
             <LinearLayout
-                android:layout_weight="1"
-                android:orientation="vertical"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
                 <TextView
-                    android:textSize="20dp"
-                    android:text="Abdul"
-                    android:textStyle="bold"
-                    android:textColor="@color/white"
+                    android:id="@+id/d_name"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"/>
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="365dp"
+                    android:text="Abdul"
+                    android:textColor="@color/white"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
                 <TextView
+                    android:id="@+id/d_loc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
                     android:layout_marginTop="2dp"
                     android:drawableLeft="@drawable/lokasi"
                     android:text="Arso"
-                    android:textStyle="bold"
                     android:textColor="@color/white"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"/>
+                    android:textStyle="bold" />
 
             </LinearLayout>
-            <Button
-                android:textAllCaps="false"
-                android:text="Follow"
-                android:textColor="@color/black"
-                android:backgroundTint="#FFFFFF"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
         </LinearLayout>
 
-        <LinearLayout
-            android:layout_marginTop="20dp"
-            android:layout_marginLeft="80dp"
-            android:orientation="horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-            <LinearLayout
-                android:layout_weight="1"
-                android:orientation="vertical"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-                <TextView
-                    android:textStyle="bold"
-                    android:textSize="18dp"
-                    android:textColor="@color/white"
-                    android:gravity="center"
-                    android:text="123"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"/>
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:text="Follow"
-                    android:textColor="@color/white"
-                    android:textSize="12dp"
-                    tools:ignore="TextSizeCheck" />
-            </LinearLayout>
-
-
-            <LinearLayout
-                android:layout_weight="1"
-                android:orientation="vertical"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-                <TextView
-                    android:textStyle="bold"
-                    android:textSize="18dp"
-                    android:textColor="@color/white"
-                    android:gravity="center"
-                    android:text="10"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"/>
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:text="Post"
-                    android:textColor="@color/white"
-                    android:textSize="12dp"
-                    tools:ignore="TextSizeCheck" />
-            </LinearLayout>
-
-            <LinearLayout
-            android:layout_weight="1"
-            android:orientation="vertical"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-            <TextView
-                android:textStyle="bold"
-                android:textSize="18dp"
-                android:textColor="@color/white"
-                android:gravity="center"
-                android:text="200"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"/>
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:text="Followers"
-                    android:textColor="@color/white"
-                    android:textSize="12dp"
-                    tools:ignore="TextSizeCheck" />
-        </LinearLayout>
-            </LinearLayout>
     </LinearLayout>
-        <LinearLayout
-            android:padding="20dp"
+
+
+        <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-            <TextView
-                android:textStyle="bold"
-                android:text="Foto"
-                android:textSize="25dp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"/>
+            android:layout_height="match_parent"
+            android:layout_below="@+id/l1"
+            android:padding="10dp">
 
-            <HorizontalScrollView
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:contentDescription="@string/app_name">
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
 
-                <LinearLayout
-                    android:layout_width="match_parent"
+                <TextView
+                    android:id="@+id/d_dec"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal">
+                    android:fontFamily="@font/poppins"
+                    android:text="TextView"
+                    android:textSize="18sp" />
+            </LinearLayout>
+        </ScrollView>
 
-                    <LinearLayout
-                        android:layout_width="100dp"
-                        android:layout_height="100dp"
-                        android:background="@drawable/fb">
-
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="100dp"
-                        android:layout_height="100dp"
-                        android:background="@drawable/fb">
-
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="100dp"
-                        android:layout_height="100dp"
-                        android:background="@drawable/fb">
-
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="100dp"
-                        android:layout_height="100dp"
-                        android:background="@drawable/fb">
-
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="100dp"
-                        android:layout_height="100dp"
-                        android:background="@drawable/fb">
-
-                    </LinearLayout>
-                </LinearLayout>
-            </HorizontalScrollView>
-        </LinearLayout>
-
-</LinearLayout>
+</RelativeLayout>
